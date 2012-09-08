@@ -120,10 +120,10 @@
     return (typeof i === 'number'? this[i] : this);
   };
 
-  Velocity.prototype.set = function(value, pop){
+  Velocity.prototype.set = function(value, shift){
     var that = this;
 
-    if (pop === true){
+    if (shift === true){
       for (var i = this.length - 1; i >= 0; i--) {
         this.shift();
       }
